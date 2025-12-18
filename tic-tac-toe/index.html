@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe - Data Structures Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <p class="subtitle">Data Structures Project: Human vs Computer</p>
+
+        <!-- Difficulty selector buttons -->
+        <div class="difficulty-selector">
+            <button class="difficulty-btn" data-difficulty="easy">Easy</button>
+            <button class="difficulty-btn active" data-difficulty="medium">Medium</button>
+            <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+        </div>
+
+        <!-- Move counter display -->
+        <div class="move-counter" id="moveCounter">Move: 0</div>
+
+        <!-- Review mode indicator -->
+        <div id="reviewMode" class="review-mode" style="display: none;">
+            REVIEW MODE - Use Forward/Backward to navigate moves
+        </div>
+
+        <!-- Game status display -->
+        <div class="status" id="status">Select difficulty and start playing! You are X</div>
+
+        <!-- Game board with 3x3 grid -->
+        <div class="game-board" id="gameBoard">
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+        </div>
+
+        <!-- Game control buttons -->
+        <div class="controls">
+            <button class="control-btn secondary" id="backwardBtn" disabled>← Backward</button>
+            <button class="control-btn secondary" id="forwardBtn" disabled>Forward →</button>
+            <button class="control-btn secondary" id="reviewBtn" disabled>Review Game</button>
+            <button class="control-btn primary" id="resetBtn">New Game</button>
+        </div>
+    </div>
+
+    <!-- Include JavaScript files -->
+    <script src="data-structures.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
